@@ -1,0 +1,69 @@
+/*base style*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary{ margin:0; padding:0;}
+body{ font-family:"\5FAE\8F6F\96C5\9ED1","Microsoft Yahei","Arial"; color:#333; background-color:#fff; font-size:15px; background-image:url(about:blank); background-attachment:fixed; overflow-x:hidden;}
+a{ color:#06f; text-decoration:none;}
+a:hover{ color:#f60; text-decoration:none;}
+img{ border:none; vertical-align:middle;width:100%}
+i,em{ font-style:normal;}
+li{ list-style-type:none;}
+textarea{ resize:vertical;}
+input, select, textarea{ font-family:"\5FAE\8F6F\96C5\9ED1","Microsoft Yahei","Arial"; background-color:#fff; margin:0; padding:0; outline:none;}
+area{ outline: none;}
+
+/*global style*/
+.g-fl{ float:left;}
+.g-fr{ float:right;}
+.g-c{ zoom:1;}
+.g-c:after{ clear:both; content:"."; display:block; height:0; visibility:hidden;}
+.g-w{ max-width: 1200px; min-width: 980px; width: 96%; margin-left:auto; margin-right:auto;}
+.g-hide{ display:none !important;}
+
+/*-----------------------------------------------字体图标------------------------------------------ */
+@font-face {
+    font-family: 'iconfont';  /* project id 2044763 */
+    src: url('//at.alicdn.com/t/font_2044763_xo1rsrwscb.eot');
+    src: url('//at.alicdn.com/t/font_2044763_xo1rsrwscb.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_2044763_xo1rsrwscb.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_2044763_xo1rsrwscb.woff') format('woff'),
+    url('//at.alicdn.com/t/font_2044763_xo1rsrwscb.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_2044763_xo1rsrwscb.svg#iconfont') format('svg');
+  }
+
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+/* 自定义 */
+body{
+    background-color: #eee;
+}
+.box-w{
+    width: 1140px;
+    margin:auto;
+}
+/* 按钮 */
+.btn_{
+    background-color:#ffbb00;
+    border:none;
+    transition:0.3s;
+    color:#fff;
+    cursor:pointer; /*鼠标悬停显示小手 */
+}
+.hand{
+	cursor:pointer; /*鼠标悬停显示小手 */
+}
+button{
+    cursor:pointer; /*鼠标悬停显示小手 */
+}
+button:focus{
+    box-shadow: 0;
+    outline:none;   /*取消点击后外边框样式 */
+    /* outline: 5px auto -webkit-focus-ring-color; */
+}
+.btn_:hover{
+    background-color: #333;
+}

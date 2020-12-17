@@ -1,0 +1,310 @@
+{
+  "id": "2044763",
+  "name": "家具",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8727201",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "7555192",
+      "name": "短信",
+      "font_class": "duanxin",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "6218237",
+      "name": "传真",
+      "font_class": "chuanzhen1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "15364",
+      "name": "双箭头右",
+      "font_class": "shuangjiantouyou",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "15365",
+      "name": "双箭头左",
+      "font_class": "shuangjiantouzuo",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "774441",
+      "name": "箭头3",
+      "font_class": "jiantou3",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "1190087",
+      "name": "活动目录配置",
+      "font_class": "huodongmulupeizhi",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "1356161",
+      "name": "眼睛-闭",
+      "font_class": "yanjing-bi",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "2529702",
+      "name": "目录、导航",
+      "font_class": "menu2",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "3262879",
+      "name": "星",
+      "font_class": "xing",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "9402969",
+      "name": "点赞，大拇指",
+      "font_class": "changyongicon-",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "9558391",
+      "name": "HTSCIT_选中",
+      "font_class": "xuanzhong",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "9575925",
+      "name": "闭眼",
+      "font_class": "biyan",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    },
+    {
+      "icon_id": "9809642",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "15726822",
+      "name": "箭头 上(1)",
+      "font_class": "jiantoushang1",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "15779765",
+      "name": "信封",
+      "font_class": "xinfeng",
+      "unicode": "e70c",
+      "unicode_decimal": 59148
+    },
+    {
+      "icon_id": "10707252",
+      "name": "箭头 右 right",
+      "font_class": "jiantouyou",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "10707278",
+      "name": "箭头 左 left",
+      "font_class": "jiantouzuo",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "11641868",
+      "name": "叉",
+      "font_class": "cha",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "1392",
+      "name": "屏风",
+      "font_class": "pingfeng",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "554357",
+      "name": "购物车",
+      "font_class": "iconset0308",
+      "unicode": "e6cf",
+      "unicode_decimal": 59087
+    },
+    {
+      "icon_id": "630126",
+      "name": "眼睛",
+      "font_class": "yanjing",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "630272",
+      "name": "new",
+      "font_class": "new",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "680963",
+      "name": "心",
+      "font_class": "xin",
+      "unicode": "e711",
+      "unicode_decimal": 59153
+    },
+    {
+      "icon_id": "722466",
+      "name": "相机",
+      "font_class": "xiangji",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "902032",
+      "name": "厨房",
+      "font_class": "chufang",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "2678659",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "2822884",
+      "name": "沙发",
+      "font_class": "shafa",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "3050508",
+      "name": "定位",
+      "font_class": "location",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "3785796",
+      "name": "椅子",
+      "font_class": "yizi",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "3874042",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "4185058",
+      "name": "办公室",
+      "font_class": "bangongshi",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "5024124",
+      "name": "柜子 床头柜",
+      "font_class": "guizichuangtougui",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "5090954",
+      "name": "家具-书架",
+      "font_class": "jiaju-shujia",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "5091177",
+      "name": "花瓶",
+      "font_class": "huaping",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "5610669",
+      "name": "家具-桌子",
+      "font_class": "icon-test",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "5610679",
+      "name": "家具-椅子",
+      "font_class": "icon-test1",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "6331957",
+      "name": "床",
+      "font_class": "chuang",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "8124845",
+      "name": "衣柜 (2)",
+      "font_class": "yigui",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "8124850",
+      "name": "地毯",
+      "font_class": "ditan",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "8124859",
+      "name": "沙发2",
+      "font_class": "shafa1",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "8124870",
+      "name": "沙发",
+      "font_class": "shafa2",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "16584514",
+      "name": "电  话",
+      "font_class": "dianhua",
+      "unicode": "e76a",
+      "unicode_decimal": 59242
+    }
+  ]
+}

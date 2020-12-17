@@ -1,0 +1,297 @@
+#body_hot_box {
+  width: 100%;
+  position: relative;
+  padding-bottom: 50px;
+}
+/* 头部标题 */
+#hot_head {
+  text-align: center;
+  color: #3a3d45;
+  margin: 50px;
+  line-height: 40px;
+}
+#body_hot::before {
+  content: "";
+  display: table;
+}
+/* 产品块 */
+#hot_ul {
+  position: relative;
+}
+#hot_ul div {
+  position: absolute;
+}
+.hot_li_box {
+  padding: 10px;
+  box-sizing: border-box;
+}
+/* 清除子元素浮动对父元素的影响 */
+#body_hot::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+#hot_ul .hot_li_box {
+  width: 350px;
+  height: 280px;
+  background-color: #fff;
+  float: left;
+  margin-bottom: 30px;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+/* 鼠标进入显示阴影 */
+#hot_ul .hot_li_box:hover {
+  box-shadow: -1px 1px 30px -4px rgba(0, 0, 0, 0.3);
+}
+.hot_title {
+  width: 100%;
+}
+/* 沙发名字 */
+#hot_ul li .hot_name {
+  font-size: 20px;
+  font-weight: 900;
+  color: #3a3d45;
+}
+/* 沙发价格 */
+.hot_price span {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+/* 沙发查看的收藏按钮 */
+.hot_collection {
+  right: 25px;
+  top: 0px;
+}
+.hot_collection a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  display: block;
+  background-color: #666;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  transform: scale(0);
+}
+#hot_ul .hot_li_box:hover .hot_collection a {
+  transform: scale(1);
+}
+.hot_collection a:hover {
+  background-color: rgb(19, 19, 19);
+}
+/* 沙发图片 */
+#hot_ul .hot_img {
+  display: block;
+}
+#hot_ul .hot_img img {
+  width: 100%;
+}
+/* 新产品和优惠标志 */
+.hot_labels {
+  bottom: 0px;
+}
+.hot_labels i {
+  font-size: 35px;
+  color: red;
+}
+/* 产品右下角加入购物车按钮 */
+.hot_shopping {
+  width: 200px;
+  height: 200px;
+  background-color: #ffbb00;
+  right: -225px;
+  bottom: -120px;
+  transform: rotateZ(-45deg);
+  transition: 0.3s;
+  cursor:pointer;
+}
+.hot_shopping i {
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  transform: rotateZ(45deg);
+  color: #fff;
+  font-size: 25px;
+}
+#hot_ul .hot_li_box:hover .hot_shopping {
+  right: -120px;
+  bottom: -120px;
+}
+.hot_shopping:hover {
+  background-color: rgb(19, 19, 19);
+}
+/* 查看储存按钮 */
+#hot_foot {
+  clear: both;
+}
+#hot_foot_btn {
+  width: 90px;
+  height: 40px;
+  font-size: 15px;
+  line-height: 40px;
+  display: block;
+  margin: 0 auto;
+  bottom: 10px;
+  border-radius: 4px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+/* 弹出详情页面 */
+#hot_details {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+}
+#hot_details_box {
+  width: 530px;
+  /* height: 690px; */
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #fff;
+}
+/* 头部 */
+#hot_details_top {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(221, 220, 220);
+}
+#hot_details_top h3 {
+  font-size: 25px;
+}
+#hot_details_top div:nth-child(1) {
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#hot_details_top div:nth-child(2) {
+  width: 60px;
+  height: 100%;
+  float: right;
+  border-left: 1px solid #eee;
+  text-align: center;
+  line-height: 70px;
+  cursor: pointer;
+}
+#hot_details_top div:nth-child(2) i {
+  font-size: 25px;
+  color: #999;
+}
+#hot_details_top div:nth-child(2):hover i {
+  color: #333;
+}
+/* 图片 */
+#hot_details_img img {
+  width: 90%;
+  height: 0;
+  margin: 0 auto;
+  display: block;
+  transition: 0.3s;
+}
+/* 简介和颜色 */
+#hot_details_brief_box {
+  width: 100%;
+  height: 180px;
+  border-top: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#hot_details_brief {
+  width: 100%;
+  height: 100%;
+}
+/* 设置th格式 */
+#hot_details_brief_box th {
+  text-align: left;
+  font-size: 16px;
+}
+#hot_color_title {
+  width: 50%;
+}
+#hot_color li,
+#hot_size li {
+  width: 23px;
+  height: 23px;
+  float: left;
+  margin: 0 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#hot_color li:nth-child(1) {
+  background-color: red;
+}
+#hot_color li:nth-child(2) {
+  background-color: blue;
+}
+#hot_color li:nth-child(3) {
+  background-color: green;
+}
+#hot_color li:nth-child(4) {
+  background-color: gray;
+}
+#hot_color li:nth-child(5) {
+  background-color: rgb(246, 246, 127);
+}
+#hot_color .color,
+#hot_size .color {
+  border: 2px solid rgb(209, 189, 8);
+  box-sizing: border-box;
+}
+/* 大小 */
+#hot_size li {
+  background-color: rgb(241, 228, 110);
+  text-align: center;
+  line-height: 21px;
+  padding: 2px;
+  font-size: 11px;
+}
+/* 底部分 */
+#hot_details_foot {
+  width: 100%;
+  height: 79px;
+  background-color: rgb(221, 220, 220);
+  display: flex;
+}
+#hot_foot_price {
+  flex: 3;
+  padding: 11px;
+  box-sizing: border-box;
+}
+#hot_foot_price p:nth-child(1) {
+  font-size: 25px;
+  font-weight: 900;
+}
+#hot_foot_view,
+#hot_foot_buy {
+  flex: 1.5;
+  text-align: center;
+  line-height: 79px;
+  border-left: 2px solid #eee;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+#hot_foot_view:hover,
+#hot_foot_buy:hover {
+  background-color: rgb(19, 19, 19);
+}
+#hot_foot_view a,
+#hot_foot_buy a {
+  color: #333;
+}
+#hot_foot_view:hover a,
+#hot_foot_buy:hover a {
+  color: #fff;
+}

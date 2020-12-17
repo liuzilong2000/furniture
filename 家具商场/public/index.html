@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="favicon.ico" />
+    <title>MOBRL</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/to_top.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/hot.css" />
+    <link rel="stylesheet" href="css/foot.css" />
+
+
+  </head>
+  <body onload="show()">
+    <!-- ---------------------导入导航栏HTML----------  -->
+    <div id="header_nav"></div>
+    <!-- ---------------------导入回到顶部按钮----------  -->
+    <div id="body_to_top"></div>
+    <!-- ---------------------成功后提示框-------------- -->
+    <div id="my_alert"></div>
+    <!-- ------------------------轮播图---------------- -->
+    <div id="rotation">
+      <ul id="rotation_ul"></ul>
+      <!-- 按钮 -->
+      <div id="rotation_btn">
+        <button id="rotation_btn_left" class="iconfont">&#xe61e;</button>
+        <button id="rotation_btn_right" class="iconfont">&#xe61d;</button>
+      </div>
+      <!-- 轮播图右下角图片索引圆点 -->
+      <ol id="rotation_ol"></ol>
+      <!-- 轮播图文字简介 -->
+      <div id="rotation_text_box" class="box-w">
+        <h2 id="rotation_text_title"></h2>
+        <p id="rotation_text_details"></p>
+      </div>
+      <!-- 轮播图下面小轮播图 -->
+      <div id="rotation_bottom">
+        <div id="rotation_samll_bigbox">
+          <button id="rotation_samll_btnLeft" class="iconfont">&#xe61e;</button>
+          <div id="rotation_samll_box" class="box-w">
+            <ul id="rotation_samll"></ul>
+          </div>
+          <button id="rotation_samll_btnRight" class="iconfont">
+            &#xe61d;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------热门产品--------------- -->
+    
+    <div id="body_hot_box">
+      <div class="container">
+        <div id="body_hot" class="row d-flex justify-content-center">
+          <!-- 头部标题 -->
+          <header id="hot_head">
+            <h1>热门产品</h1>
+            <p>看看我们最新的收藏</p>
+          </header>
+          <!-- 沙发展示区域 -->
+		      <section id="hot_body">
+		        <ul id="hot_ul" class="row">
+		      		<li class='li col-lg-4 col-12 col-md-6 d-flex justify-content-center' v-for='(elem,i) of 6' :key='i'>
+			    		<hots ref='hots'></hots>
+			    	</li>
+		      	</ul>
+		      </section>
+          <!-- 底部按钮 -->
+          <footer id="hot_foot" class="box-w">
+            <button id="hot_foot_btn" class="btn_ p-0" @click='a'>查看全部</button>
+          </footer>
+        </div>
+      </div>
+      
+    
+    </div>
+<!-- ---------------------弹出详情页面---------------- -->
+<div id="hot_details">
+  <div id="hot_details_box">
+    <!-- 头部 -->
+    <div id="hot_details_top">
+      <div>
+        <h3 id="hot_details_name"></h3>
+        <p>沙发</p>
+      </div>
+      <div id="hot_details_x">
+        <i class="iconfont">&#xe61c;</i>
+      </div>
+    </div>
+    <!-- 图片 -->
+    <div id="hot_details_img">
+      <img src="images/product-1.png" alt="" />
+    </div>
+    <!-- 简介和颜色 -->
+    <div id="hot_details_brief_box">
+      <table id="hot_details_brief">
+        <tr>
+          <th>品牌名称</th>
+          <td>芝华仕CHEERS</td>
+          <th id="hot_color_title">可选颜色</th>
+        </tr>
+        <tr>
+          <th>所用材料</th>
+          <td>木材、皮革、亚克力</td>
+          <td>
+            <ul id="hot_color">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>是否现有货</th>
+          <td>
+            <i class="iconfont">&#xe63a;</i>
+            <span>有现货</span>
+          </td>
+          <th>选择尺码</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>
+            <ul id="hot_size">
+              <li>S</li>
+              <li>M</li>
+              <li>XL</li>
+              <li>XXL</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- 地部分 -->
+    <div id="hot_details_foot">
+      <div id="hot_foot_price">
+        <p id="hot_price_d"></p>
+        <p id="hot_price"></p>
+      </div>
+      <div id="hot_foot_view">
+        <a href="grid.html">
+          <i class="iconfont">&#xe661;</i>
+          <span>查看更多</span>
+        </a>
+      </div>
+      <div id="hot_foot_buy">
+        <a href="javascript:;">
+          <i class="iconfont">&#xe6cf;</i>
+          <span>加入购物车</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- -----------------------屏风------------------ -->
+    <div id="screen">
+      <ul id="screen_box"></ul>
+    </div>
+
+    <!-- ------------------------理念------------------ -->
+    <div id="diesa">
+      <div class="container">
+        <div class="row no-gutters d-flex justify-content-center">
+          <!-- 标题 -->
+          <div id="diesa_title">
+            <h3>内部理念</h3>
+            <p>保持最小限度</p>
+          </div>
+          <!-- 内容 -->
+          <ul id="diesa_body" class="row"></ul>
+          <!-- 底部按钮 -->
+          <div class="diesa_foot">
+            <a href="javascript:;">
+              <button class="btn_ px-3">查看所有帖子</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------我们的故事------------------ -->
+    <div id="story">
+      <div id="story_text">
+        <h2>我们的故事</h2>
+        <p>
+          我们相信创造力是进步的主要力量之一。带着这个想法，我们走遍了意大利，
+          寻找杰出的工匠，并把他们独特的手工制品带给各地的鉴赏家。
+        </p>
+        <a href="javascript:;">
+          <button>阅读整个故事</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- -------------------------博客--------------------------- -->
+    <div class="container">
+      <div id="blog">
+        <div class="pt-1">
+          <!-- 标题 -->
+          <div id="blog_title" class="text-center my-5">
+            <h3 class="h3">博客</h3>
+            <p class="">最新博客消息</p>
+          </div>
+          <!-- 内容 -->
+          <div id="blog_body" class="row no-gutters"></div>
+          <!-- 底部按钮 -->
+          <div class="diesa_foot">
+            <a href="javascript:;">
+              <button class="btn_ px-3 py-2 rounded mt-0">查看所有消息</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------关注我们--------------------------- -->
+    <div class="followus bg-white">
+      <div id="followus_title" class="text-center h3 py-5">
+        <p class="mb-1">关注<i class="iconfont">&#xe616;</i>我们</p>
+        <p class="h6">981647939@qq.com</p>
+      </div>
+      <div class="d-flex followus_box_img" id="followus_box_img"></div>
+    </div>
+    <!-- 底部 -->
+    <div id="footer"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/animate.js"></script> -->
+    <script src="js/ajaxv1.js"></script>
+    <!--封装的ajax-->
+    <script src="js/index.js"></script>
+    <!--地图js-->
+    <script src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=u68GwH2NW0B411vDLKn8HEdS5AG2Mlj6"></script>
+		<script type="text/javascript" src="./js/foot.js"></script>
+    
+  </body>
+</html>

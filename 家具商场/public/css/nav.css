@@ -1,0 +1,383 @@
+
+
+/* -------------------------公共类 ------------------*/
+
+/* ---------------------导航栏 --------------------*/
+/* 导航栏上面部分 */
+.nav{
+    position: fixed;
+    width: 101%;
+    left:50%;
+    top:0;
+    transform: translatex(-50%);
+    z-index: 9999999;
+}
+.nav-box-top{
+    height: 35px;
+    transition:all 0.3s;
+    border-bottom:1px solid rgb(218, 216, 216);
+}
+.nav-box-top >ul{
+    float:right;
+}
+.nav-box-top > ul > li{
+    width: 50px;
+    float:left;
+    height: 35px;
+    line-height: 34px;
+    text-align: center;
+    position: relative;
+}
+.nav-box-top .nav-left li{
+    width: auto;
+    color:#ffbb00;
+    margin-right:20px;
+}
+.nav-box-top >ul >li> a i{
+    color:#ffbb00;
+    font-size:20px;
+}
+.nav .nav-right >li{
+    border-left:1px solid rgb(218, 216, 216);
+}
+/* 导航栏下拉框 */
+    /* 登录框 */
+.nav .nav-dl{
+    width: 300px;
+    height: 0px;
+    background-color: #fff;
+    text-align: left;
+    padding:0px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top:95px;
+    right:-102px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    transition:0.3s;
+}
+.nav-dl h2{
+    color:#666;
+}
+.nav-dl #uname{
+    margin-top:20px;
+}
+.nav-dl input{
+    width: 250px;
+    height: 40px;
+    /* margin-top:20px; */
+    padding-left:10px;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+}
+/* 搜索框被激活时改变颜色 */
+.nav-dl input:focus{
+    border:1px solid #ffbb00;
+}
+.nav-dl p{
+    color:#000;
+    font-size:13px;
+    line-height: 25px;
+}
+.nav-dl p:hover{
+    color:rgb(85, 84, 84);
+}
+.nav-dl-retrieve{
+    margin:15px 0;
+}
+/* 登录按钮 */
+.nav .nav-dl-btn,
+.nav .nav-zc-btn,
+#loginOut{
+    width: 250px;
+    height: 40px;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    position: absolute;
+}
+.nav .nav-dl-btn{
+    z-index: 99;
+}
+/* 登录后样式 */
+#nav_dl_content2 div{
+    width: 100%;
+    text-align: center;
+}
+#nav_dl_content2 div:first-child{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin:0 auto;
+}
+#nav_dl_content2 div:first-child img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+#loginOut{
+    bottom:20px;
+    left:50%;
+    transform: translate(-50%);
+}
+/* 登录提示 */
+#dl_name,
+#dl_pwd{
+  width: 100%;
+  height: 20px;
+  display: block;
+  color:red;
+  line-height: 20px;
+  font-size: 12px;
+}
+/* 搜索下拉框 */
+#nav_search{
+    width: 80%;
+    height: 0px;
+    background-color: #fff;
+    transition: 0.3s;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    position: fixed;
+    top:95px;
+    left:50%;
+    transform: translate(-50%);
+    overflow: hidden;
+}
+#nav_search form{
+    width: 100%;
+    height: 61px;
+    color:#555;
+    position: relative;
+    background-color: red;
+}
+#nav_search .inp{
+    width: 100%;
+    height: 61px;
+    padding-left:20px;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+}
+/* 搜索框被激活时改变颜色 */
+#nav_search .inp:focus{
+    border:1px solid #ffbb00;
+}
+#nav_search #nav_btn{
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    transition: 0.3s;
+    text-align: center;
+    border-radius:5px;
+    font-size: 16px;
+    font-weight: 900;
+    position: absolute;
+    top:50%;
+    right:10px;
+    transform: translate(0,-50%);
+}
+/* 模糊查询到的数据 */
+#nav_search_bottom{
+    width: 100%;
+}
+#nav_search_bottom >ul >li>div{
+    width: 90%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    border-bottom:1px solid rgb(233, 230, 230);
+}
+#nav_search_bottom >ul >li{
+    width: 100%;
+}
+#nav_search_bottom >ul >li:hover{
+    /* background-color: #ffbb00; */
+    background-color: rgba(0,0,0,.1);
+}
+/* 导航栏下面 */
+.nav-box-bottom{
+    height: 59px;
+}
+
+    /* 右边字 */
+.nav-box-bottom .nav-box-right li{
+    transition: .3s;
+    box-sizing: border-box;
+}
+@media (max-width:991.99px){
+	.nav-box-right{
+		background-color: rgba(0,0,0,.5);
+	}
+	.nav-box-bottom .nav-box-right li:hover{
+	    border-bottom:5px solid #ffbb00;
+	}
+	.nav-box-bottom .nav-box-right li{
+		transition: none;
+	    border-bottom:5px solid transparent;
+	}
+	.logo{
+		margin-left:10px;
+	}
+}
+@media (min-width:992px){
+	.nav-box-right{
+		background-color: transparent;
+	}
+	.nav-box-bottom .nav-box-right{
+		border-top:0px solid #fff;
+		margin-top:0px;
+	}
+	.nav-box-bottom .nav-box-right,
+	#navbarSupportedContent{
+		height: 100%;
+	}
+	.nav-box-bottom .nav-box-right li:hover{
+	    border-bottom:5px solid #ffbb00;
+	}
+/* 	.nav{
+		background-color: transparent;
+	} */
+}
+.nav-box-bottom .nav-box-right li a{
+	line-height: 59px;
+    color:#fff !important;
+    font-size:16px;
+}
+/* 当鼠标进入显示下边框 */
+
+.nav-box-bottom .nav-box-right li:hover a{
+    color:#fff;
+}
+/* 购物车下拉框 */
+#nav_shopping{
+    width: 500px;
+    height: 0;
+    box-sizing: border-box;
+    background-color: #eee;
+    position: absolute;
+    top:94px;
+    right:0;
+    overflow: hidden;
+    transition:0.3s;
+}
+#nav_shopping_box{
+    transition:0.3s;
+    margin:500px;
+}
+#nav_shopping ul{
+    width: 470px;
+    overflow:auto;
+    box-sizing: border-box;
+}
+#nav_shopping ul li{
+    width: 220px;
+    height: 277px;
+    background-color: #fff;
+    float: left;
+    margin-bottom:8px;
+    position: relative;
+}
+#nav_shopping ul li:nth-child(2n){
+    margin-left: 8px;
+}
+    /* 删除x */
+.nav_shopping_x{
+    line-height: 15px;
+    color:#999;
+    position: absolute;
+    top:5px;
+    right:5px;
+    transition:0.3s;
+}  
+.nav_shopping_x i{
+    font-size: 20px;;
+}
+.nav_shopping_x:hover{
+    transform: rotateZ(90deg);
+}
+    /* 商品图片 */
+#nav_shopping ul li img{
+    width: 211px;
+    height: 158px;
+    
+}
+    /* 商品名称 */
+.shopping_name{
+    padding-left:10px;
+}
+.shopping_name a{
+    color: #ffbb00;
+    font-weight: 700;
+}
+.shopping_name p{
+    text-align: left;
+    line-height: 18px;
+}
+/* 商品价数量 */
+.shopping_price{
+    margin-top:10px;
+    box-sizing: border-box;
+   
+}
+.nav_shopping_price_num{
+    width: 80px;
+    height: 50px;
+    margin-left:10px;
+    border:1px solid #eee;
+    float: left;
+}
+.shopping_price .num{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    float: left;
+}
+.nav_shopping_price_btn{
+    float: left;
+}
+.nav_shopping_price_num .add,
+.nav_shopping_price_num .sub{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: #fff;
+    margin-top:4px;
+    border:1px solid #ffbb00;
+    border-radius: 5px;
+    text-align: center;
+    line-height:0px;
+    padding:0;
+}
+    /* 商品价格 */
+.shopping_price .price{
+    float:right;
+    width: 80px;
+    height: 50px;
+    margin-right: 20px;
+}
+.shopping_price .price p{
+    line-height: 22px;
+}
+    /* 总价结算 */
+#nav_shopping_total{
+    border-top:1px solid rgb(184, 183, 183);
+    margin-top:10px;
+}
+#nav_shopping_total div{
+    text-align: left;
+    font-size:20px;
+    float:left;
+}
+#nav_shopping_total{
+    overflow: hidden;
+}
+#nav_shopping_total #total{
+    float:right;
+}
+#nav_shopping_btn{
+    width: 50px;
+    height: 40px;
+    float:right;
+}
+
+

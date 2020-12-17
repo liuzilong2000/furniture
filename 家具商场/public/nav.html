@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lx.css"> -->
+  </head>
+  <body>
+    <!-- ------------------------导航栏---------------- -->
+    <div class="container">
+      <div class="row no-gutters">
+        <nav class="nav">
+          <div class="nav-box-top box-w">
+            <ul class="nav-right">
+              <li>
+                <!-- 创建点击事件 -->
+                <a href="javascript:;" id="nav_dl_user" onclick="nav_dl_use()">
+                  <i class="iconfont">&#xe66b;</i>
+                </a>
+                <!-- 登录下拉框 -->
+                <div id="nav_dl_box">
+                  <!-- 登录界面 -->
+                  <div class="nav-dl" id="nav_dl" class="nav_dl">
+                    <!-- 登录前样式 -->
+                    <div id="nav_dl_content1">
+                      <h2 id="nav_dl_h2">登录</h2>
+                      <input
+                      type="text"
+                      placeholder="Email"
+                      class="inp"
+                      id="uname"
+                      autocomplete="off"
+                      />
+                      <span id="dl_name"></span>
+                      <!--文本提示-->
+                      <input
+                      type="password"
+                      placeholder="Password"
+                      class="inp"
+                      id="upwd"
+                      />
+                      <span id="dl_pwd"></span>
+                      <!--文本提示-->
+                      <div class="nav-dl-retrieve">
+                      <a href="javascript:;">
+                        <p>忘记密码？</p>
+                      </a>
+                      <a href="javascript:;">
+                        <p id="nav_dl_p">还没有账户？</p>
+                      </a>
+                      </div>
+                      <button class="nav-dl-btn btn_" id="btn_dl">
+                      <b>登 &nbsp;&nbsp;&nbsp;&nbsp;录</b>
+                      </button>
+                      <button class="nav-zc-btn btn_" id="btn_zc">
+                      <b>注 &nbsp;&nbsp;&nbsp;&nbsp;册</b>
+                      </button>
+                    </div>
+                    <!-- 登陆后样式 -->
+                    <div id="nav_dl_content2" style="display: none;">
+                      <!-- 头像 -->
+                      <div id="portrait">
+                        <img src="" alt="" id='portrait_img'>
+                        <form action="/user/v1/userUpdata" method="POST" enctype="multipart/form-data" target="frameName" id="img_form">
+                          <input accept="image/*" type="file" name='img' multiple id="picInput" style="display: none;">
+                          <input type="hidden" name="log_type" value="opt_log" id="picInput_email">
+                          <input type="submit" value="提交" id="submit_btn" style="display: none;">
+                        </form>
+                        <!-- 表单提交后禁止页面跳转 -->
+                        <iframe src="" frameborder="0" name="frameName" style="display: none;" id="img_form1"></iframe>
+                      </div>
+                      <div id="username"></div>
+                      <div>
+                        <button class="nav-dl-btn btn_" id="loginOut">
+                          <b>退出登录</b>
+                        </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <!-- 创建点击事件 -->
+                <a href="##" onclick="nav_ss_search()" id="nav_ss_font">
+                  <i class="iconfont">&#xe636;</i>
+                </a>
+                <!-- 搜索下拉框 -->
+                <div id="nav_search">
+                  <form action="">
+                    <input type="text" placeholder="Search..." class="inp" id="nav_search_inp"/>
+                    <input
+                      type="submit"
+                      id="nav_btn"
+                      value="Go!"
+                      class="btn_"
+                    />
+                  </form>
+                  <div id="nav_search_bottom">
+                    <ul></ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="javascript:;"
+                  onclick="nav_gw_shopping()"
+                  id="nav_gw_font"
+                >
+                  <i class="iconfont">&#xe6cf;</i>
+                </a>
+                <!-- 购物车下拉框 -->
+                <div id="nav_shopping">
+                  <div id="nav_shopping_box">
+                    <!-- -----------购物车中商品----------- -->
+                    <ul id="nav_shopping_center"></ul>
+                    <!-- -----------购物车中商品----------- -->
+                    <div id="nav_shopping_total">
+                      <div>总价：</div>
+                      <div id="total">$0</div>
+                    </div>
+                    <button id="nav_shopping_btn" class="btn_">结算</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="nav-left">
+              <li id="welcome"></li>
+            </ul>
+          </div>
+          <div class="nav-box-bottom box-w">
+            <nav class="navbar navbar-expand-lg p-0 h-100 navbar-dark">
+              <a class="navbar-brand logo" href="index.html"
+                ><img src="images/logo.png" alt=""
+              /></a>
+              <button
+                class="navbar-toggler mr-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav h5 font-weight-bold nav-box-right" id="nav_box_right">
+                  <li class="nav-item pl-md-3 px-xl-2 pl-3">
+                    <a class="nav-link py-0 text-light" href="index.html">首页</a>
+                  </li>
+                  <li class="nav-item pl-md-3 px-xl-2 pl-3">
+                    <a class="nav-link py-0" href="prodoct.html">产品概述</a>
+                  </li>
+                  <li class="nav-item pl-md-3 px-xl-2 pl-3">
+                    <a class="nav-link py-0" href="grid.html">产品网格</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-form.js"></script>
+    <!-- <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/ajax_user.js"></script> -->
+    <script src="js/nav.js"></script>
+    <script src="js/animate.js"></script>
+  </body>
+</html>

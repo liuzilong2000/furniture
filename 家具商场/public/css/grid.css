@@ -1,0 +1,296 @@
+#top_box{
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+	color:#fff;
+}
+#title_img {
+	height: 100%;
+	width: 100%;
+	min-width: 550px;
+	background: url('../images/gallery-3.jpg') no-repeat;
+	background-size: 100%;
+	background-position:center;
+	position: relative;
+}
+/* 面包屑导航条 */
+#top_box .container{
+	position: absolute;
+	left:50%;
+	bottom:0px;
+	transform: translate(-50%);
+	padding-left:0px;
+	padding-right:0px;
+}
+#top_box a{
+	color:#fff;
+}
+#top_box i{
+	font:30px;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #d5d5d5;
+}
+#top_box ol li:last-child a{
+	color:#ffaa00;
+}
+#top_box nav ol{
+	padding-left:0px;
+	padding-right:0px;
+	background-color: transparent;
+}
+/* ---------------------------------------轮播图下面小轮播图--------------------------------------- */
+#rotation_bottom{
+    width: 100%;
+    height: 160px;
+	background-color: #fff;
+/*    position: absolute;
+    bottom:30px;
+    z-index: 99; */
+}
+#rotation_samll_bigbox{
+    width: 1240px;
+    height: 100%;
+    margin:0 auto;
+}
+#rotation_samll_box{
+    overflow: hidden;
+    float: left;
+    position: relative;
+    height: 130px;
+}
+#rotation_samll{
+    position: absolute;
+    height: 100%;
+    /* transition: 0.1s; */
+}
+#rotation_samll li{
+    width: 190px;
+    height: 130px;
+    float: left;
+    text-align: center;
+}
+#rotation_samll li a{
+    color:#434343;
+}
+#rotation_samll li i{
+    font-size: 50px;
+    line-height: 110px;
+    transition:0.1s;
+}
+#rotation_samll li:hover i{
+    font-size: 70px;
+}
+/* 轮播图下面小轮播图  按钮*/
+#rotation_bottom  button{
+	width: 50px;
+	height: 60px;
+	background-color: rgba(0,0,0,0);
+	color:#000;
+	text-align:center;
+	line-height: 60px;
+	border:none;
+	font-size:25px;
+    height: 100%;
+    float: left;
+    visibility:hidden;
+}
+#rotation_samll_btnLeft{
+    left:100px;
+}
+/* 中间导航栏 */
+select{
+	-webkit-appearance: none;
+	border:1px solid #000;
+	/* box-sizing: border-box; */
+}
+@media (min-width:768px){
+	.center_nav{
+		background-color: transparent;
+	}
+}
+@media (max-width:768px){
+	.center_nav{
+		background-color: #fff;
+	}
+}
+.center_nav_btn{
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	transition: 0.3s;
+	margin-left:10px;
+	cursor:pointer;
+}
+.center_nav_btn:hover{
+	background-color: #ffbb00;
+	transform:scale(1.1);
+	color:#fff;
+}
+
+/* 选择 */
+.choice_head{ /*头*/
+	cursor:pointer; /*鼠标悬停显示小手 */
+}
+.choice_head>span{
+	transition: 0.3s;
+}
+.choice_slide{/*身体*/
+	width: 100%;
+	padding: 20px 10px;
+	overflow: hidden;
+	transition:all 0.3s;
+}
+/* 滑动模块 */
+.choice_slide > div:first-child{
+	float: left;
+	visibility: hidden;
+}
+.choice_slide > div:nth-child(2){
+	float: right;
+	visibility: hidden;
+}
+.choice_slide div:first-child,
+.choice_slide div:nth-child(2),
+.choice_slide div:nth-child(3) > div > div{
+	color:#9d9d9d;
+	font-size: 12px;
+	padding:0px 5px;
+	background-color: #dcdcdc;
+	border-radius:3px;
+	margin-bottom:10px;
+}
+/* 滑块 */
+.choice_slide div:nth-child(3){
+	clear:both;
+	height: 8px;
+	background-color: #ffbb00;
+	border-radius: 5px;
+	position: relative;
+}
+.choice_slide div:nth-child(3) > div{
+	width: 22px;
+	height: 22px;
+	background-color: #ffbb00;
+	border:2px solid #ffbb00;
+	border-radius: 50%;
+	position: absolute;
+	top:50%;
+	transform: translate(0,-50%);
+}
+.choice_slide div:nth-child(3) > div:first-child{
+	left:0;
+}
+.choice_slide div:nth-child(3) > div:last-child{
+	left:91%;
+}
+.choice_slide div:nth-child(3) > div:hover{
+	background-color: #000;
+}
+/* 滑动模块按钮价格 */
+.choice_slide div:nth-child(3) > div > div{
+	background-color: #a7a7a7;
+	color:#fff;
+	position: absolute;
+	left:50%;
+	top:-23px;
+	transform: translate(-50%,0);
+}
+/* 可利用 */
+.choice_slide_ul a{
+	color:#000;
+}
+.choice_slide_ul li span:first-child{
+	width: 18px;
+	height: 18px;
+	border:1px solid #b4b4b4;
+	border-radius: 50%;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 15px;
+	margin-top:3px;
+}
+.choice_slide_ul li span:first-child i{
+	font-size: 13px;
+	color:#fff;
+}
+.choice_slide_ul li span:first-child:not(:empty){
+	background-color: #ffbb00;
+}
+
+
+#body_hot_box{
+	padding-bottom: 10px;
+}
+/* 底部分页按钮 */
+.body_hot_bottom{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 50px;
+}
+.body_hot_bottom div:last-child,
+.body_hot_bottom div:first-child,
+.body_hot_bottom ul li{
+	width: 35px;
+	height: 35px;
+	background-color: #ffbb00;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 35px;
+	color:#fff;
+	cursor:pointer;
+	transition: 0.3s;
+}
+.body_hot_bottom div:last-child:hover,
+.body_hot_bottom div:first-child:hover{
+	background-color: #000;
+	transform:scale(1.1)
+}
+.body_hot_bottom ul{
+	display: flex;
+	justify-content: content;
+}
+.body_hot_bottom ul li{
+	margin:0 3px;
+	font-size:16px;
+}
+.body_hot_bottom ul li:hover{
+	background-color: #000;
+}
+.body_hot_bottom ul .bgBlack{
+	background-color: #000;
+}
+#cha_box{
+	display: none;
+}
+
+
+@media(max-width:992px){
+	.section_box{
+		background-color: #fff;
+		height: 100%;
+		position: fixed;
+		z-index:999999999999;
+		top:0px;
+		right:-500px;
+		overflow:auto;
+		transition:1s;
+		/* display:none; */
+	}
+	#cha_box{
+		display: block;
+	}
+	#cha_box::after{
+		content:'';
+		display: block;
+		clear: both;
+	}
+	#cha{
+		font-size: 40px;
+		float: right;
+		cursor:pointer;
+	}
+}
